@@ -1,6 +1,6 @@
 <template>
-  <div class="ui medium images custom-image">
-    <img  class="ui image" v-for="(image, index) in allImages" :key="index" :src="image.link" />
+  <div class="ui medium images">
+    <img  class="ui image custom-image" v-for="(image, index) in allImages" :key="index" :src="image.link" />
   </div>
 </template>
 
@@ -19,6 +19,6 @@ export default {
 
 <style scoped>
   .custom-image {
-    margin: 10px;
+    margin-right: 30px;
   }
 </style>
