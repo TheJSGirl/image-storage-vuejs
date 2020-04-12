@@ -1,6 +1,9 @@
 <template>
-  <div class="ui medium images image-container">
-    <img  class="ui image custom-image" v-for="(image, index) in allImages" :key="index" :src="image.link" />
+  <div>
+    <div class="ui medium images image-container" v-if="isLoggedIn">
+      <img  class="ui image custom-image" v-for="(image, index) in allImages" :key="index" :src="image.link" />
+    </div>
+    <h2 v-else>Log in to get started!</h2>
   </div>
 </template>
 
@@ -9,7 +12,7 @@ import { mapActions, mapGetters} from 'vuex';
 
 export default {
   name: 'ImageList',
-  computed: mapGetters(['allImages']),
+  computed: mapGetters(['allImages', 'isLoggedIn']),
   methods: mapActions(['fetchImages']),
   created() {
     this.fetchImages();
