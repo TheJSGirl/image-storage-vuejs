@@ -1,5 +1,5 @@
 <template>
-  <div class="ui medium images">
+  <div class="ui medium images image-container">
     <img  class="ui image custom-image" v-for="(image, index) in allImages" :key="index" :src="image.link" />
   </div>
 </template>
@@ -19,6 +19,11 @@ export default {
 
 <style scoped>
   .custom-image {
-    margin-right: 30px;
+    max-width: 100%;
+    padding: 5px;
+  }
+  .image-container {
+    column-count: 3;
+    column-gap: 0;
   }
 </style>
