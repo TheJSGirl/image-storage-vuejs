@@ -1,5 +1,11 @@
-# images
+# Image Storage Web APP
 
+About Project
+
+* It's an Image Storage Web App using Imgur API's to store images
+* It has functionality to upload images to Imgur plateform
+* Fetch images from Imgur and display on home page
+* Login/Logout user 
 ## Project setup
 ```
 npm install
@@ -14,11 +20,7 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
+### Tech
 ```
-npm run lint
+VueJS
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
